@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:br.org.eldorado.inspection////PointingToDeclaration/inspection/br.org.eldorado.inspection/index.html
+$dokka.location:br.org.eldorado.inspection//main/#kotlin.Array[kotlin.String]/PointingToDeclaration/inspection/br.org.eldorado.inspection/main.html
+$dokka.location:br.org.eldorado.inspection/InspectionApplication///PointingToDeclaration/inspection/br.org.eldorado.inspection/-inspection-application/index.html
+$dokka.location:br.org.eldorado.inspection/InspectionApplication/InspectionApplication/#/PointingToDeclaration/inspection/br.org.eldorado.inspection/-inspection-application/-inspection-application.html
+br.org.eldorado.inspection
+
