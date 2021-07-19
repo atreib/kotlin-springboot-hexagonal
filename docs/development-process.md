@@ -24,8 +24,12 @@ A melhor documentação é um código limpo, bem formatado e legível. De qualqu
 
 # 📍 Documentação de rotas
 
-To-do
+Todo controller criado na camada `./presentation/controllers`, que possua endpoints, deve ser documentado (descrição e retornos) no Swagger, utilizando as anotações da própria biblioteca. Da mesma forma, as `data classes` criadas para atuar com os `controllers`, armazenadas em `./presentation/projections`, também devem ser documentadas (propriedades e tipos). Com a correta documentação, os endpoints são disponibilizados para visualização através do swagger-ui.
+
+Para mais detalhes sobre as anotações do Swagger, veja a documentação de outras endpoints do próprio projeto ou a própria documentação do Swagger ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
+
+Para visualizar o Swagger UI (a visualização da documentação), basta executar o projeto e acessar `http://localhost:8080/swagger-ui.html`.
 
 ### Referências
 
-To-do
+[https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)

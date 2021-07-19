@@ -1,11 +1,12 @@
 package br.com.andretreib.example.presentation.projections
 
-import br.com.andretreib.example.domain.models.IExampleModel
+import io.swagger.annotations.ApiModelProperty
 import java.util.Date
 
-data class IExampleResponse(val message: String, val createdAt: Date)
+data class IExampleResponse(
+    @ApiModelProperty(notes = "Mensagem persistida no repositório Example", required = true)
+    val message: String,
 
-fun IExampleModel.toIExampleResponse() = IExampleResponse(
-    message = message,
-    createdAt = createdAt,
+    @ApiModelProperty(notes = "Data/hora de criação da mensagem", required = true)
+    val createdAt: Date
 )

@@ -12,9 +12,10 @@ Atualizado em 16/07/2021. Projeto criado na ferramenta draw.io e disponibilizado
 
 # 👨🏻‍💻 Lista de comandos:
 
-- Help: `./gradlew tasks`
-- Check if code is correctly formatted: `./gradlew ktlintCheck`
-- Format code: `./gradlew ktlintFormat`
-- Run for development: `./gradlew bootRun`
-- Run unit tests: `./gradlew test`
-- Generating docs file: `./gradlew dokkaHtml`
+- Ver todas as tarefas: `./gradlew tasks`
+- Checar formatação do código: `./gradlew ktlintCheck`
+- Formatar o código: `./gradlew ktlintFormat`
+- Executar projeto para desenvolvimento: `./gradlew bootRun`
+- Executar testes automatizados: `./gradlew test`
+- Gerar documentação do código: `./gradlew dokkaHtml`
+- Visualizar documentação das rotas (projeto deve estar em execução): Acessar `http://localhost:8080/swagger-ui.html`

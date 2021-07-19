@@ -81,4 +81,47 @@ plugins {
 
 # 📍Configuração de documentação de rotas
 
-To-do
+Para documentação das rotas/endpoints da nossa API, vamos utilizar o Swagger.
+
+Adicionamos o `swagger` e o `swagger-ui` às dependências do projeto, no arquivo `./build.gradle.kts`:
+
+```bash
+dependencies {
+    ...
+    implementation("io.springfox:springfox-swagger2:3.0.0")
+    implementation("io.springfox:springfox-swagger-ui:2.9.2")
+}
+```
+
+Com as novas dependências inseridas e com o *gradle* sincronizado, criamos o arquivo de configuração do swagger (uma classe Kotlin simples), `SwaggerConfig.kt` (na raíz da pasta do nosso package), com a seguinte configuração:
+
+```kotlin
+package br.com.andretreib.example
+
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+import springfox.documentation.builders.RequestHandlerSelectors
+import springfox.documentation.spi.DocumentationType
+import springfox.documentation.spring.web.plugins.Docket
+import springfox.documentation.swagger2.annotations.EnableSwagger2
+
+@Configuration
+@EnableSwagger2
+class SwaggerConfig {
+    @Bean
+    open fun api() =
+        Docket(DocumentationType.SWAGGER_2)
+            .select()
+            .apis(RequestHandlerSelectors.basePackage("br.com.andretreib.example"))
+            .build();
+}
+```
+
+Na configuração, estabelecemos que o Swagger só irá apresentar os endpoints dentro do package `br.com.andretreib.example`. Com a configuração feita corretamente, basta utilizar as tags de anotação do próprio Swagger ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
+
+### Referências
+
+[https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+[https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)
