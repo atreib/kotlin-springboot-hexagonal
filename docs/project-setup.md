@@ -125,11 +125,11 @@ class SwaggerConfig {
         Docket(DocumentationType.SWAGGER_2)
             .select()
             .apis(RequestHandlerSelectors.basePackage("br.com.andretreib.api"))
-            .build();
+            .build()
 }
 ```
 
-In this file, we set the Swagger is only going to show the endpoints inside our package `br.com.taesa.api.inspection`.
+In this file, we set the Swagger is only going to show the endpoints inside our package `br.com.andretreib.api`.
 
 With this set up correctly done, we only need to use the Swagger rules and annotations tags ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
 
