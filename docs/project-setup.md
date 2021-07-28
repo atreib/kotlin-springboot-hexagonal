@@ -106,7 +106,7 @@ dependencies {
 With the new dependencies and the gradle synced, we're going to create a swagger configuration file (it's a simple Kotlin class), `SwaggerConfig.kt` (in our package root), with the following rules:
 
 ```kotlin
-package br.com.taesa.api.inspection
+package br.com.andretreib.api
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -124,7 +124,7 @@ class SwaggerConfig {
     open fun api() =
         Docket(DocumentationType.SWAGGER_2)
             .select()
-            .apis(RequestHandlerSelectors.basePackage("br.com.taesa.api.inspection"))
+            .apis(RequestHandlerSelectors.basePackage("br.com.andretreib.api"))
             .build();
 }
 ```

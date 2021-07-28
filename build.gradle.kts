@@ -9,8 +9,8 @@ plugins {
     id("org.jetbrains.dokka") version "1.5.0"
 }
 
-group = "br.com.taesa.api"
-version = "0.0.2"
+group = "br.com.andretreib.api"
+version = "0.0.1"
 java.sourceCompatibility = JavaVersion.VERSION_16
 
 repositories {
