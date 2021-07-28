@@ -1,8 +1,67 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:br.org.eldorado.inspection////PointingToDeclaration/inspection/br.org.eldorado.inspection/index.html
-$dokka.location:br.org.eldorado.inspection//main/#kotlin.Array[kotlin.String]/PointingToDeclaration/inspection/br.org.eldorado.inspection/main.html
-$dokka.location:br.org.eldorado.inspection/InspectionApplication///PointingToDeclaration/inspection/br.org.eldorado.inspection/-inspection-application/index.html
-$dokka.location:br.org.eldorado.inspection/InspectionApplication/InspectionApplication/#/PointingToDeclaration/inspection/br.org.eldorado.inspection/-inspection-application/-inspection-application.html
-br.org.eldorado.inspection
+$dokka.location:br.com.andretreib.api.domain.contracts////PointingToDeclaration/inspection/br.com.andretreib.api.domain.contracts/index.html
+$dokka.location:br.com.andretreib.api.domain.contracts/IExampleService///PointingToDeclaration/inspection/br.com.andretreib.api.domain.contracts/-i-example-service/index.html
+$dokka.location:br.com.andretreib.api.domain.contracts/IExampleService/create/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.domain.contracts/-i-example-service/create.html
+$dokka.location:br.com.andretreib.api.domain.contracts/IExampleService/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.contracts/-i-example-service/find-all.html
+$dokka.location:br.com.andretreib.api.domain.errors////PointingToDeclaration/inspection/br.com.andretreib.api.domain.errors/index.html
+$dokka.location:br.com.andretreib.api.domain.errors/EmptyMessageException///PointingToDeclaration/inspection/br.com.andretreib.api.domain.errors/-empty-message-exception/index.html
+$dokka.location:br.com.andretreib.api.domain.errors/EmptyMessageException/EmptyMessageException/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.errors/-empty-message-exception/-empty-message-exception.html
+$dokka.location:br.com.andretreib.api.domain.errors/InternalServerException///PointingToDeclaration/inspection/br.com.andretreib.api.domain.errors/-internal-server-exception/index.html
+$dokka.location:br.com.andretreib.api.domain.errors/InternalServerException/InternalServerException/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.errors/-internal-server-exception/-internal-server-exception.html
+$dokka.location:br.com.andretreib.api.domain.implementations////PointingToDeclaration/inspection/br.com.andretreib.api.domain.implementations/index.html
+$dokka.location:br.com.andretreib.api.domain.implementations/ExampleService///PointingToDeclaration/inspection/br.com.andretreib.api.domain.implementations/-example-service/index.html
+$dokka.location:br.com.andretreib.api.domain.implementations/ExampleService/ExampleService/#br.com.andretreib.api.infrastructure.contracts.IExampleRepository/PointingToDeclaration/inspection/br.com.andretreib.api.domain.implementations/-example-service/-example-service.html
+$dokka.location:br.com.andretreib.api.domain.implementations/ExampleService/create/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.domain.implementations/-example-service/create.html
+$dokka.location:br.com.andretreib.api.domain.implementations/ExampleService/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.implementations/-example-service/find-all.html
+$dokka.location:br.com.andretreib.api.domain.models////PointingToDeclaration/inspection/br.com.andretreib.api.domain.models/index.html
+$dokka.location:br.com.andretreib.api.domain.models/IExampleModel///PointingToDeclaration/inspection/br.com.andretreib.api.domain.models/-i-example-model/index.html
+$dokka.location:br.com.andretreib.api.domain.models/IExampleModel/IExampleModel/#kotlin.String#java.util.Date/PointingToDeclaration/inspection/br.com.andretreib.api.domain.models/-i-example-model/-i-example-model.html
+$dokka.location:br.com.andretreib.api.domain.models/IExampleModel/createdAt/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.models/-i-example-model/created-at.html
+$dokka.location:br.com.andretreib.api.domain.models/IExampleModel/message/#/PointingToDeclaration/inspection/br.com.andretreib.api.domain.models/-i-example-model/message.html
+$dokka.location:br.com.andretreib.api.infrastructure.contracts////PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.contracts/index.html
+$dokka.location:br.com.andretreib.api.infrastructure.contracts/IExampleRepository///PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.contracts/-i-example-repository/index.html
+$dokka.location:br.com.andretreib.api.infrastructure.contracts/IExampleRepository/create/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.contracts/-i-example-repository/create.html
+$dokka.location:br.com.andretreib.api.infrastructure.contracts/IExampleRepository/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.contracts/-i-example-repository/find-all.html
+$dokka.location:br.com.andretreib.api.infrastructure.implementations.memoryrepository////PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.implementations.memoryrepository/index.html
+$dokka.location:br.com.andretreib.api.infrastructure.implementations.memoryrepository/ExampleRepository///PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.implementations.memoryrepository/-example-repository/index.html
+$dokka.location:br.com.andretreib.api.infrastructure.implementations.memoryrepository/ExampleRepository/ExampleRepository/#/PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.implementations.memoryrepository/-example-repository/-example-repository.html
+$dokka.location:br.com.andretreib.api.infrastructure.implementations.memoryrepository/ExampleRepository/create/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.implementations.memoryrepository/-example-repository/create.html
+$dokka.location:br.com.andretreib.api.infrastructure.implementations.memoryrepository/ExampleRepository/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.infrastructure.implementations.memoryrepository/-example-repository/find-all.html
+$dokka.location:br.com.andretreib.api.presentation.controllers////PointingToDeclaration/inspection/br.com.andretreib.api.presentation.controllers/index.html
+$dokka.location:br.com.andretreib.api.presentation.controllers/ExampleController///PointingToDeclaration/inspection/br.com.andretreib.api.presentation.controllers/-example-controller/index.html
+$dokka.location:br.com.andretreib.api.presentation.controllers/ExampleController/ExampleController/#br.com.andretreib.api.presentation.handlers.ExampleHandler/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.controllers/-example-controller/-example-controller.html
+$dokka.location:br.com.andretreib.api.presentation.controllers/ExampleController/create/#br.com.andretreib.api.presentation.projections.IExampleRequest/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.controllers/-example-controller/create.html
+$dokka.location:br.com.andretreib.api.presentation.controllers/ExampleController/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.controllers/-example-controller/find-all.html
+$dokka.location:br.com.andretreib.api.presentation.handlers////PointingToDeclaration/inspection/br.com.andretreib.api.presentation.handlers/index.html
+$dokka.location:br.com.andretreib.api.presentation.handlers/ExampleHandler///PointingToDeclaration/inspection/br.com.andretreib.api.presentation.handlers/-example-handler/index.html
+$dokka.location:br.com.andretreib.api.presentation.handlers/ExampleHandler/ExampleHandler/#br.com.andretreib.api.domain.contracts.IExampleService/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.handlers/-example-handler/-example-handler.html
+$dokka.location:br.com.andretreib.api.presentation.handlers/ExampleHandler/create/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.handlers/-example-handler/create.html
+$dokka.location:br.com.andretreib.api.presentation.handlers/ExampleHandler/findAll/#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.handlers/-example-handler/find-all.html
+$dokka.location:br.com.andretreib.api.presentation.projections////PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/index.html
+$dokka.location:br.com.andretreib.api.presentation.projections//toIExampleResponse/br.com.andretreib.api.domain.models.IExampleModel#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/to-i-example-response.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleRequest///PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-request/index.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleRequest/IExampleRequest/#kotlin.String/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-request/-i-example-request.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleRequest/message/#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-request/message.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleResponse///PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-response/index.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleResponse/IExampleResponse/#kotlin.String#java.util.Date/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-response/-i-example-response.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleResponse/createdAt/#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-response/created-at.html
+$dokka.location:br.com.andretreib.api.presentation.projections/IExampleResponse/message/#/PointingToDeclaration/inspection/br.com.andretreib.api.presentation.projections/-i-example-response/message.html
+$dokka.location:br.com.andretreib.api////PointingToDeclaration/inspection/br.com.andretreib.api/index.html
+$dokka.location:br.com.andretreib.api//main/#kotlin.Array[kotlin.String]/PointingToDeclaration/inspection/br.com.andretreib.api/main.html
+$dokka.location:br.com.andretreib.api/InspectionApplication///PointingToDeclaration/inspection/br.com.andretreib.api/-inspection-application/index.html
+$dokka.location:br.com.andretreib.api/InspectionApplication/InspectionApplication/#/PointingToDeclaration/inspection/br.com.andretreib.api/-inspection-application/-inspection-application.html
+$dokka.location:br.com.andretreib.api/SwaggerConfig///PointingToDeclaration/inspection/br.com.andretreib.api/-swagger-config/index.html
+$dokka.location:br.com.andretreib.api/SwaggerConfig/SwaggerConfig/#/PointingToDeclaration/inspection/br.com.andretreib.api/-swagger-config/-swagger-config.html
+$dokka.location:br.com.andretreib.api/SwaggerConfig/api/#/PointingToDeclaration/inspection/br.com.andretreib.api/-swagger-config/api.html
+br.com.andretreib.api
+br.com.andretreib.api.domain.contracts
+br.com.andretreib.api.domain.errors
+br.com.andretreib.api.domain.implementations
+br.com.andretreib.api.domain.models
+br.com.andretreib.api.infrastructure.contracts
+br.com.andretreib.api.infrastructure.implementations.memoryrepository
+br.com.andretreib.api.presentation.controllers
+br.com.andretreib.api.presentation.handlers
+br.com.andretreib.api.presentation.projections
 

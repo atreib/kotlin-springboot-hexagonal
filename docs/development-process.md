@@ -1,35 +1,51 @@
-# ⏹️ Diagrama de arquitetura
+# ⏹️ Architecture diagram
 
-O desenvolvimento do projeto é dirigido pelo diagrama de arquitetura, sendo feita, a partir dele, as implementações da solução. O diagrama não utiliza nenhum padrão obrigatório, sendo apenas uma visualização rápida/fácil da solução de forma macro.
+This project development is being driven by our architecture diagram. This diagram doesn't have any particular pattern, just being used as an easy and fast view of the solution.
 
-Desta forma, o diagrama de arquitetura deve sempre estar atualizado de acordo com a última versão da solução.
+So, the architecture must always be updated accordingly to the solution last version.
 
-- O projeto do diagrama encontra-se dentro da pasta `./docs/diagram/project.drawio`.
-- A ferramenta utilizada é o [draw.io](https://app.diagrams.net/).
-- Toda nova versão deve ser disponibilizada no formato .png e salva em `./docs/diagram/project.png`.
+- The diagram project can be found inside the directory `./docs/diagram/project.png`.
+- The tool that is being used is [draw.io](https://app.diagrams.net/).
+- Every new version must be available in the .png extension and be saved at `./docs/diagram/project.png`.
+  - You can open the .png file as a project inside [draw.io](https://app.diagrams.net/)
+  - When saving the project after updating it, choose "File" -> "Export as" -> "PNG" and **check the option "Include a copy of my diagram"**. Then, replace the `./docs/diagram/project.png` file by the exported (and new) one.  
 
-### Referências
+### References
 
 [https://app.diagrams.net/](https://app.diagrams.net/)
 
-# 📜 Documentação de código
+# 📜 Code documentation
 
-Além das documentações de configuração de ambiente e projeto, também disponibilizamos a documentação do código, gerada de forma automática através de docstrings (KDocs e Dokka). Para não existir um bloqueio no desenvolvimento, outras técnicas de documentação são utilizadas em paralelo (como o diagrama de arquitetura).
+Beside the documentations of project and environment setup, we also document the code, generated automatically through docstrings (Kdocs pattern with Dokka library). So that it doesn't become a block, another documentations techniques are used (like the architecture diagram).
 
-A melhor documentação é um código limpo, bem formatado e legível. De qualquer forma, documentamos as interfaces de cada camada da solução utilizando os padrões de KDocs do Kotlin para auxiliar na manutenção do código.
+The best documentation is a clean code, well formatted and easy to read. Anyway, we document the core classes and interfaces of each layer to help to maintain the code.
 
-### Referências
+### References
 
 [https://kotlinlang.org/docs/kotlin-doc.html#see-identifier](https://kotlinlang.org/docs/kotlin-doc.html#see-identifier)
 
-# 📍 Documentação de rotas
+# 📍 Endpoints documentation
 
-Todo controller criado na camada `./presentation/controllers`, que possua endpoints, deve ser documentado (descrição e retornos) no Swagger, utilizando as anotações da própria biblioteca. Da mesma forma, as `data classes` criadas para atuar com os `controllers`, armazenadas em `./presentation/projections`, também devem ser documentadas (propriedades e tipos). Com a correta documentação, os endpoints são disponibilizados para visualização através do swagger-ui.
+Every controller created in the `./presentation/controllers` layer, that has any endpoint, must be documented (description and return) with Swagger, using the library rules and annotations. Also, the `data classes` created to work with the `controller`, stored in `./presentation/projections`, also must be documented (properties and types). The endpoints documented are going to be available through swagger-ui.
 
-Para mais detalhes sobre as anotações do Swagger, veja a documentação de outras endpoints do próprio projeto ou a própria documentação do Swagger ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
+To see more about the Swagger rules and annotations, read the documentation of other endpoints from this project or read the Swagger documentation ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
 
-Para visualizar o Swagger UI (a visualização da documentação), basta executar o projeto e acessar `http://localhost:8080/swagger-ui.html`.
+To access the Swagger UI (the documentation website), just run the project and access `http://localhost:8080/swagger-ui.html`.
 
-### Referências
+### References
 
 [https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)
+
+# ✅ Unit tests
+
+Our project has JUnit 5 and Mockito for automating tests. We don't strictly apply TDD, trying to achieve a 100% coverage, but we try to cover our domain methods and expected exceptions.
+
+To see more about the JUnit tests, read their documentation ([https://junit.org/junit5/docs/current/user-guide/](https://junit.org/junit5/docs/current/user-guide/)). And, to read more about mocking classes, read the Mockito documentation ([https://site.mockito.org/](https://site.mockito.org/)).
+
+You can check the code coverage through Intellij IDEA, by clicking to run a test class and selecting "Run CLASSNAME with coverage".
+
+### References
+
+[https://junit.org/junit5/docs/current/user-guide/](https://junit.org/junit5/docs/current/user-guide/)
+
+[https://site.mockito.org/](https://site.mockito.org/)

@@ -1,6 +1,6 @@
-# 📁 Configuração inicial do projeto
+# 📁 Project initial setup
 
-O projeto utiliza Kotlin com Springboot. Para iniciar o projeto, vamos utilizar o **spring initializr** ([https://start.spring.io/](https://start.spring.io/)). Acesse a página do spring initializr e selecione as seguintes configurações:
+This project uses Kotlin with Spring Boot. To initiate the project, we're going to use the **spring initializr** ([https://start.spring.io/](https://start.spring.io/)). Access the spring initializr page and select the following settings:
 
 - **Project:** Gradle
 - **Language:** Kotlin
@@ -11,19 +11,19 @@ O projeto utiliza Kotlin com Springboot. Para iniciar o projeto, vamos utilizar 
     - Spring Boot DevTools
     - Spring Web
 
-Após configurar conforme indicações acima, faça o download do projeto. Após o download ser concluído, extraia o arquivo do projeto no diretório que você deseja utilizar para o desenvolvimento do projeto. Para isto, acesse o diretório através do terminal e execute: `unzip project.zip`
+After setting the values as above, download the project. Extract the downloaded file inside the directory where you want to store the project. To do this, run: `unzip project.zip`.
 
-### Referências
+### References
 
 [https://spring.io/guides/tutorials/spring-boot-kotlin/](https://spring.io/guides/tutorials/spring-boot-kotlin/)
 
 [https://docs.spring.io/initializr/docs/current/reference/html/#packaging](https://docs.spring.io/initializr/docs/current/reference/html/#packaging)
 
-# 👨🏻‍🏫 Configuração de linter
+# 👨🏻‍🏫 Linter setup
 
-Como ferramenta de linter do nosso projeto, utilizaremos o `ktlint`.
+As our project's linter tool, we're going to use the `ktlint`.
 
-Para configurar o ktlint no projeto, temos apenas que adicionar o plugin ao final da lista de plugins no arquivo de build do projeto, `./build.gradle.kts`:
+To set up the ktlint in our project, we only have to add the plugin to the plugins list, inside the build file of the project, `./build.gradle.kts`:
 
 ```bash
 plugins {
@@ -32,36 +32,46 @@ plugins {
 }
 ```
 
-A partir disto, teremos dois novos comandos adicionados ao nosso gradle:
+After adding this new plugin and syncing the gradle, we're going to have two new commands:
 
-- `./gradlew ktlintCheck`: Verificação da formatação do código
-- `./gradlew ktlintFormat`: Formatação automática do código
+- `./gradlew ktlintCheck`: Check our code format
+- `./gradlew ktlintFormat`: Format our code
 
-Lembrando que para verificar todos os comandos disponíveis no nosso projeto, basta rodar `./gradlew tasks`.
-
-### Referências
+### References
 
 [https://ktlint.github.io/](https://ktlint.github.io/)
 
-# ✍🏻 Configuração de testes automatizados
+# ✍🏻 Automated tests setup
 
-Por termos iniciado o nosso projeto com a utilização do springboot, já está configurada a biblioteca JUnit para testes automatizados.
+Since we created our project with Spring Boot, JUNit is already set up for automated tests in our project.
 
-A cada execução dos testes, o JUnit irá disponibilizar um relatório dos testes executados. Este relatório é armazenado em `./build/reports/tests/test/index.html`.
+Besides JUnit 5, we also enable Mockito as our class mock library. To do so, update the `./build.gradle.kts` file:
 
-A cobertura de testes do código é automaticamente gerada e pode ser encontrada dentro do projeto através da própria IDE, IntelliJ IDEA. Para executar e visualizar a cobertura de testes, basta executar o comando: `Run -> Run {applicationName} with Coverage`.
+```
+dependencies {
+    ...
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.mockito:mockito-core:3.3.3")
+}
+```
 
-- Para executar os testes do projeto, basta rodar: `./gradlew test`.
+At each test run, JUnit is going to generate a report of our executed tests. This report is store in `./build/reports/tests/test/index.html`.
 
-### Referências
+The test coverage of our code is automatic and can be found inside our project through our IDE, IntelliJ IDEA. To run and see our code coverage, access: `Run -> Run {applicationName} with Coverage`.
+
+- To execute our project tests, run `./gradlew test` or click at the run tests button (represented by a ▶️ icon) in a test class.
+
+### References
 
 [https://junit.org/junit5/docs/current/user-guide/](https://junit.org/junit5/docs/current/user-guide/)
 
-# 📜 Configuração de documentação de código
+[https://site.mockito.org/](https://site.mockito.org/)
 
-Para geração da documentação do código, utilizamos a sintaxe KDoc, sendo as docstrings do Kotlin, junto à ferramenta Dokka, responsável pela geração da documentação.
+# 📜 Code documentation setup
 
-Para a configuração da Dokka no projeto, adicione no arquivo `./build.gradle.kts`:
+For generating our code documentation, we're using the KDoc syntax, the kotlin docstring, with the Dokka library (responsible for generating/exporting the documentation).
+
+To set up Dokka in our project, add to our project build file, `./build.gradle.kts`:
 
 ```bash
 plugins {
@@ -70,20 +80,20 @@ plugins {
 }
 ```
 
-- Para gerar/atualizar a documentação, basta executar: `./gradlew dokkaHtml`
-    - Uma página HTML com a documentação será gerada e armazenada em `./build/dokka/html/index.html`.
+- To generate/update our documentation, just run: `./gradlew dokkaHtml`
+    - A HTML page with our documentation is going to be generated and stored inside `./build/dokka/html/index.html`.
 
-### Referências
+### References
 
 [https://github.com/Kotlin/dokka](https://github.com/Kotlin/dokka)
 
 [https://kotlinlang.org/docs/kotlin-doc.html#see-identifier](https://kotlinlang.org/docs/kotlin-doc.html#see-identifier)
 
-# 📍Configuração de documentação de rotas
+# 📍 Endpoints documentation setup
 
-Para documentação das rotas/endpoints da nossa API, vamos utilizar o Swagger.
+For our API endpoints documentation, we're going to use Swagger.
 
-Adicionamos o `swagger` e o `swagger-ui` às dependências do projeto, no arquivo `./build.gradle.kts`:
+Let's Add `swagger` and `swagger-ui` to our project dependencies, inside the file `./build.gradle.kts`:
 
 ```bash
 dependencies {
@@ -93,10 +103,10 @@ dependencies {
 }
 ```
 
-Com as novas dependências inseridas e com o *gradle* sincronizado, criamos o arquivo de configuração do swagger (uma classe Kotlin simples), `SwaggerConfig.kt` (na raíz da pasta do nosso package), com a seguinte configuração:
+With the new dependencies and the gradle synced, we're going to create a swagger configuration file (it's a simple Kotlin class), `SwaggerConfig.kt` (in our package root), with the following rules:
 
 ```kotlin
-package br.com.andretreib.example
+package br.com.taesa.api.inspection
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -114,14 +124,17 @@ class SwaggerConfig {
     open fun api() =
         Docket(DocumentationType.SWAGGER_2)
             .select()
-            .apis(RequestHandlerSelectors.basePackage("br.com.andretreib.example"))
+            .apis(RequestHandlerSelectors.basePackage("br.com.taesa.api.inspection"))
             .build();
 }
 ```
 
-Na configuração, estabelecemos que o Swagger só irá apresentar os endpoints dentro do package `br.com.andretreib.example`. Com a configuração feita corretamente, basta utilizar as tags de anotação do próprio Swagger ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
+In this file, we set the Swagger is only going to show the endpoints inside our package `br.com.taesa.api.inspection`.
 
-### Referências
+With this set up correctly done, we only need to use the Swagger rules and annotations tags ([https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)).
+
+### References
 
 [https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+
 [https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X](https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X)

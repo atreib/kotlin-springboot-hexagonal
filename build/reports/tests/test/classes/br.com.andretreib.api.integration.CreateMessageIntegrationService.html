@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CreateMessageIntegrationService</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CreateMessageIntegrationService</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/br.com.andretreib.api.integration.html">br.com.andretreib.api.integration</a> &gt; CreateMessageIntegrationService</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.135s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should create a message()</td>
+<td class="success">0.135s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-07-28 15:22:06.511  INFO 10377 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.andretreib.api.integration.CreateMessageIntegrationService], using SpringBootContextLoader
+2021-07-28 15:22:06.511  INFO 10377 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [br.com.andretreib.api.integration.CreateMessageIntegrationService]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-28 15:22:06.511  INFO 10377 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.andretreib.api.integration.CreateMessageIntegrationService]: CreateMessageIntegrationService does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-28 15:22:06.517  INFO 10377 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.andretreib.api.InspectionApplication for test class br.com.andretreib.api.integration.CreateMessageIntegrationService
+2021-07-28 15:22:06.518  INFO 10377 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-28 15:22:06.519  INFO 10377 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78f4c617, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@58bfa32a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2c89db55, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@229d8fc5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c0721ff, org.springframework.test.context.event.EventPublishingTestExecutionListener@59846ba6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3bb550b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@751803a4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30d5cc21, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4af648c6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5bd7b1f8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6ee78c05]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2021-07-28 15:22:06.540  INFO 10377 --- [    Test worker] .c.a.a.i.CreateMessageIntegrationService : Starting CreateMessageIntegrationService using Java 16.0.1 on CPQTESTE with PID 10377 (started by atreib in /home/atreib/Documents/projects/kotlin-spring-hexagonal)
+2021-07-28 15:22:06.541  INFO 10377 --- [    Test worker] .c.a.a.i.CreateMessageIntegrationService : No active profile set, falling back to default profiles: default
+2021-07-28 15:22:06.959  INFO 10377 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 41323
+2021-07-28 15:22:06.989  INFO 10377 --- [    Test worker] .c.a.a.i.CreateMessageIntegrationService : Started CreateMessageIntegrationService in 0.468 seconds (JVM running for 3.686)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Jul 28, 2021, 3:22:09 PM</p>
+</div>
+</div>
+</body>
+</html>

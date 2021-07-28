@@ -9,8 +9,8 @@ plugins {
     id("org.jetbrains.dokka") version "1.5.0"
 }
 
-group = "br.com.andretreib"
-version = "0.0.1-SNAPSHOT"
+group = "br.com.taesa.api"
+version = "0.0.2"
 java.sourceCompatibility = JavaVersion.VERSION_16
 
 repositories {
@@ -24,9 +24,11 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.springfox:springfox-swagger2:3.0.0")
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.5.1")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.projectreactor:reactor-test")
+    testImplementation("org.mockito:mockito-core:3.3.3")
 }
 
 tasks.withType<KotlinCompile> {

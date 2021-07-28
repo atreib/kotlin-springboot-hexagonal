@@ -1,76 +1,66 @@
-# 👨🏻‍💻 Requisitos
+# 👨🏻‍💻 Requirements
 
 - Java JDK 16+
 
-# ⚙️ Instalando o JDK
+# ⚙️ Installing JDK
 
 ## 🐧 Linux
 
-1. Instale o OpenJDK ([https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot](https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot)).
-2. Selecione a versão 16 com HotSpot como nosso JVM e faça o download.
-3. Mova o arquivo `.tar.gz` baixado para a pasta onde desejas armazenar o JDK
-    1. Recomendamos a criação de uma pasta `java` dentro do diretório `/opt` , movendo o arquivo `.tar.gz` para dentro.
-4. Abra a pasta com o arquivo `.tar.gz` pelo terminal.
-5. Vamos extrair o arquivo `.tar.gz` para configuração deste JDK. Para isto, execute:
+1. Install the OpenJDK ([https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot](https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot)).
+2. Select the version 16 with HotSpot as our JVM and download it.
+3. Move the downloaded `.tar.gz` file to the directory where you want to store the JDK.
+    1. We recommend a new folder `java` inside the `/opt` directory, moving the `.tar.gz` file there.
+4. Open the directory with the `.tar.gz` file inside the terminal.
+5. Extract the `.tar.gz` file for the JDK setup. To do this, run:
 
     ```bash
     tar xzf OpenJDK16U-jdk_x64_linux_hotspot_16.0.1_9.tar.gz
     ```
 
-6. Agora, vamos configurar a nossa variável de ambiente `JAVA_HOME` com o caminho para a pasta com o nosso novo JDK e atualizar a variável de ambiente `PATH`, incluindo a `JAVA_HOME`.
-    1. Execute `echo $PWD` para visualizar o caminho absoluto até a pasta (salve esta informação, vamos usar no próximo passo).
-    2. Vamos criar um arquivo de script que será executado a cada login do usuário (no sistema operacional), atualizando a nossa variável de ambiente `PATH`. Para isto, execute:
+6. Now, let's setup our `JAVA_HOME` environment variable with the absolute path to the directory with the downloaded JDK and update the `PATH` environment variable, including `JAVA_HOME`.
+    1. Execute `echo $PWD` to view the absolute path to this directory (store that info, we're going to need it in the next step).
+    2. Now, we're going to create a new script that is going to run at each user logon (in the OS), updating our environment variable, `PATH`. To do this, run:
 
         ```bash
         sudo nano /etc/profile.d/jdk_home.sh
         ```
 
-    3. Dentro do arquivo, coloque o seguinte conteúdo:
+    3. Now, write (in the `jdk_home.sh` file):
 
         ```bash
         export JAVA_HOME=/opt/java/jdk-16.0.1+9
         export PATH=$JAVA_HOME/bin:$PATH
         ```
 
-       **ATENÇÃO:** O caminho `/opt/java/jdk-16.0.1+9` é o caminho escolhido conforme recomendação no passo **3.a**. Utilize, aqui, o caminho absoluto executado no passo **6.a**.
+       **ATTENTION:** The path `/opt/java/jdk-16.0.1+9` must be the absolute path showed in the step **6.i**.
 
-    4. Salve o arquivo pressionando `CTRL` + `X`, digitando `Y` e pressionando `ENTER`.
+    4. Save this file by pressing `CTRL` + `X`, typing `Y` and pressing `ENTER`.
 
-       Dentro do arquivo, coloque o seguinte conteúdo:
+7. Logoff and logon in the OS again (or restart your computer).
+8. It's all set! To check the operation success, run `java -version`. The showed version must be the same one downloaded in the step **1**.
 
-7. Faça logoff e login no computador (ou reinicie-o).
-8. Pronto! Para verificar o sucesso da operação, execute o comando `java -version`. A versão apresentada deverá ser a mesma que foi baixada no passo **1**.
-
-### Referências
+### References
 
 [https://adoptopenjdk.net/installation.html?variant=openjdk16&jvmVariant=hotspot#x64_linux-jdk](https://adoptopenjdk.net/installation.html?variant=openjdk16&jvmVariant=hotspot#x64_linux-jdk)
 
 [https://keepgrowing.in/java/how-to-permanently-set-java_home-on-ubuntu/](https://keepgrowing.in/java/how-to-permanently-set-java_home-on-ubuntu/)
 
-## 💻 Windows
-
-To-do
-
-# 🔨 Ferramenta recomendada
+# 🔨 Recommended tool
 
 ## 🐧 Linux: IntelliJ IDEA
 
-Faça o download da última versão estável do IntelliJ IDEA Community version ([https://www.jetbrains.com/idea/download/#section=linux](https://www.jetbrains.com/idea/download/#section=linux)) e extraia o arquivo baixado no diretório que você deseja manter a instalação armazeada.
+Download the last stable version of IntelliJ IDEA Community version ([https://www.jetbrains.com/idea/download/#section=linux](https://www.jetbrains.com/idea/download/#section=linux)) and extrant the downloaded file inside the directory that you want to store the software.
 
-- Recomendamos que você crie uma pasta dentro do diretório `opt`, extraindo o IDEA na pasta criada. Para isto, acesse a pasta pelo terminal e execute:
+- We recommend you to create a new directory inside `opt`, extracting the IDEA downloaded file inside of it. To do this, open your terminal and run:
 
 ```bash
 tar xzf ideaIC-2021.1.3.tar.gz
 ```
 
-Para executar a IDE, abra a pasta `bin` e execute `./idea.sh` para iniciar a aplicação.
+To execute the IntelliJ IDEA, open the `bin` folder of the extracted folder and execute `./idea.sh`.
 
-- Recomendamos a configuração de um atalho no dock do Linux, para facilitar o acesso.
+- We recommend you to set up a shortcut in the Linux dock.
 
 ### References
 
 [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
-
-## 💻 Windows: IntelliJ IDEA
-
-To-do

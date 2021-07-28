@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.andretreib.api.domain.implementations.ExampleServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-07-28T18:22:06" hostname="CPQTESTE" time="0.005">
+  <properties/>
+  <testcase name="should return message created in repository()" classname="br.com.andretreib.api.domain.implementations.ExampleServiceTest" time="0.001"/>
+  <testcase name="should call repository's findAll()()" classname="br.com.andretreib.api.domain.implementations.ExampleServiceTest" time="0.001"/>
+  <testcase name="should call repository's create() with provided message()" classname="br.com.andretreib.api.domain.implementations.ExampleServiceTest" time="0.001"/>
+  <testcase name="should return repository's messages()" classname="br.com.andretreib.api.domain.implementations.ExampleServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
