@@ -1,4 +1,4 @@
-# 🥽 Inspection service
+# Example service
 
 ![docs/diagram/project.png](docs/diagram/project.png)
 
