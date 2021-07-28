@@ -2,7 +2,7 @@
 
 ![docs/diagram/project.png](docs/diagram/project.png)
 
-Updated at 16/07/2021. Project created with draw.io and available at `./docs/diagram.project.drawio`.
+Updated at 28/07/2021. Project created with draw.io and available at `./docs/diagram/project.png`.
 
 # 🔖 Documentation:
 
